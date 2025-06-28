@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Victor Babiuc - Personal Website
 
-## Getting Started
+A personal website for Victor Babiuc — wannabe entrepreneur & tech enthusiast. Showcasing projects, interests, and a bit about me.
 
-First, run the development server:
+🌐 **Live Website:** [https://victorbabiuc.com](https://victorbabiuc.com)
 
+---
+
+## ✨ Features
+- Responsive, clean design
+- Social media links with custom SVG icons
+- Fast loading, minimal dependencies
+
+---
+
+## 🛠️ Tech Stack
+- **Framework:** Next.js 15.3.4
+- **Styling:** No CSS frameworks, custom CSS only
+- **Icons:** Custom SVGs
+- **Hosting:** Hostgator (static export)
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/victorbabiuc/victor-personal-site.git
+cd victor-personal-site
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🏗️ Build Instructions
 
-To learn more about Next.js, take a look at the following resources:
+To generate a static build:
+```bash
+npm run build
+npm run export
+```
+The static site will be output to the `out` directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Deployment (Hostgator)
+1. Zip the contents of the `out` folder after build/export.
+2. Upload the zip file to your Hostgator account via cPanel's File Manager.
+3. Extract the files into your public_html (or desired) directory.
+4. Ensure your domain points to the correct directory.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📋 Roadmap
+See [`ROADMAP.md`](./ROADMAP.md) for planned features, priorities, and ideas.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👤 About Me
+Hi, I'm Victor. I run [Bold Profiles](https://boldprofiles.com/) (helping startups find tomorrow's leaders), invest small checks as an angel in tech companies, and have a wide range of interests — from jiujitsu to plant care. Always staying curious!
+
+---
+
+© 2024 Victor Babiuc. All rights reserved.
+
