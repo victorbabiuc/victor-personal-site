@@ -1,6 +1,6 @@
 # Victor Babiuc - Personal Website
 
-A personal website for Victor Babiuc — wannabe entrepreneur & tech enthusiast. Showcasing projects, interests, and a bit about me.
+A personal website for Victor Babiuc — wannabe entrepreneur & tech enthusiast. The site is now **LIVE** with real content!
 
 🌐 **Live Website:** [https://victorbabiuc.com](https://victorbabiuc.com)
 
@@ -10,11 +10,12 @@ A personal website for Victor Babiuc — wannabe entrepreneur & tech enthusiast.
 - Responsive, clean design
 - Social media links with custom SVG icons
 - Fast loading, minimal dependencies
+- Static export for easy deployment
 
 ---
 
 ## 🛠️ Tech Stack
-- **Framework:** Next.js 15.3.4
+- **Framework:** Next.js 15
 - **Styling:** No CSS frameworks, custom CSS only
 - **Icons:** Custom SVGs
 - **Hosting:** Hostgator (static export)
@@ -46,7 +47,6 @@ npm run dev
 To generate a static build:
 ```bash
 npm run build
-npm run export
 ```
 The static site will be output to the `out` directory.
 
@@ -55,8 +55,13 @@ The static site will be output to the `out` directory.
 ## 📦 Deployment (Hostgator)
 1. Zip the contents of the `out` folder after build/export.
 2. Upload the zip file to your Hostgator account via cPanel's File Manager.
-3. Extract the files into your public_html (or desired) directory.
+3. Extract the files into your `public_html` (or desired) directory.
 4. Ensure your domain points to the correct directory.
+
+---
+
+## 📝 Blog
+The blog is now live! Check out the first post: [Hello World! I'm Victor](https://victorbabiuc.com/blog/hello-world)
 
 ---
 

@@ -4,25 +4,29 @@
 - [x] Personal website initial build
 - [x] Social icons with interactive effects
 - [x] Deployment to production
+- [x] Blog live with "Hello World" post
 
 ---
 
 ## 📝 To-Do List
 
 ### 🔥 High Priority
-- [ ] Blog functionality (posts, navigation, markdown support)
-- [ ] Photo Gallery / Carousel (responsive, lightbox)
+- [ ] Photo carousel for homepage
+- [ ] Blog post featured images
+- [ ] Contact form
+- [ ] Blog post tags/categories
+- [ ] Reading time estimates
 
 ### ⭐ Medium Priority
 - [ ] Dark mode toggle 🌙
-- [ ] Subtle animations (page transitions, icon hover, etc.)
-- [ ] Contact form (email integration, validation)
-- [ ] Additional content (projects, interests, timeline, etc.)
+- [ ] Analytics integration (Google Analytics)
+- [ ] Social sharing buttons for blog posts
+- [ ] RSS feed for blog
+- [ ] Search functionality for blog posts
 
 ### 💤 Low Priority
-- [ ] PWA support (offline, installable)
-- [ ] Analytics integration (privacy-friendly)
-- [ ] Sitemap.xml & SEO improvements
+- [ ] Investment portfolio showcase page
+- [ ] Travel photo galleries
 
 ---
 
