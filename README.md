@@ -6,6 +6,13 @@ A personal website for Victor Babiuc — wannabe entrepreneur & tech enthusiast.
 
 ---
 
+## 🚦 Status
+- Site is **LIVE** at [https://victorbabiuc.com](https://victorbabiuc.com)
+- Blog routing issue is solved for both local development and static hosting
+- Both development and production builds tested and working
+
+---
+
 ## ✨ Features
 - Responsive, clean design
 - Social media links with custom SVG icons
@@ -52,11 +59,31 @@ The static site will be output to the `out` directory.
 
 ---
 
-## 📦 Deployment (Hostgator)
-1. Zip the contents of the `out` folder after build/export.
-2. Upload the zip file to your Hostgator account via cPanel's File Manager.
-3. Extract the files into your `public_html` (or desired) directory.
-4. Ensure your domain points to the correct directory.
+## 🚢 Deployment (Static Hosting & Hostgator)
+
+### Blog Routing Solution
+- **Local development:** Use `/blog` (Next.js routing works out of the box)
+- **Static hosting:** `/blog` needs to resolve to `blog/index.html` (not just `blog.html`)
+- **After build:**
+  - Copy `blog.html` to `blog/index.html`:
+    ```bash
+    cp out/blog.html out/blog/index.html
+    ```
+  - This allows both local and production to use `/blog` links
+
+### Deployment Steps
+1. Build the site:
+   ```bash
+   npm run build
+   ```
+2. Copy blog.html to blog/index.html:
+   ```bash
+   cp out/blog.html out/blog/index.html
+   ```
+3. Zip the `out` folder
+4. Upload the zip to Hostgator via cPanel
+5. Extract into your `public_html` (or desired) directory
+6. Ensure your domain points to the correct directory
 
 ---
 
