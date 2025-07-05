@@ -10,12 +10,17 @@ A personal website for Victor Babiuc — wannabe entrepreneur & tech enthusiast.
 - Site is **LIVE** at [https://victorbabiuc.com](https://victorbabiuc.com)
 - Blog routing issue is solved for both local development and static hosting
 - Both development and production builds tested and working
+- **Latest:** Custom image-based blog header with scattered text layout and subtitle, modern X (Twitter) sharing button, and underlined external link for Ruby on the homepage
 
 ---
 
 ## ✨ Features
 - Responsive, clean design
+- Custom image-based blog header with scattered, artistic text layout
+- Subtitle: "Thoughts on tech, recruiting, travel, and adventures" (centered, single line)
 - Social media links with custom SVG icons
+- Modern X (Twitter) sharing button with official branding
+- Underlined external link for "Ruby" (homepage)
 - Fast loading, minimal dependencies
 - Static export for easy deployment
 
@@ -89,6 +94,7 @@ The static site will be output to the `out` directory.
 
 ## 📝 Blog
 The blog is now live! Check out the first post: [Hello World! I'm Victor](https://victorbabiuc.com/blog/hello-world)
+- Features a custom image header with scattered text and a modern, SEO-friendly layout.
 
 ---
 
