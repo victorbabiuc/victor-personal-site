@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "npm run fix-blog-routes",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "fix-blog-routes": "cp out/blog.html out/blog/index.html && mkdir -p out/blog/bjj-black-belt-truth out/blog/hello-world && cp out/blog/bjj-black-belt-truth.html out/blog/bjj-black-belt-truth/index.html && cp out/blog/hello-world.html out/blog/hello-world/index.html"
   },
   "dependencies": {
     "react": "^19.0.0",

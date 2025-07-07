@@ -2,6 +2,12 @@ import Link from 'next/link';
 
 const posts = [
   {
+    slug: 'bjj-black-belt-truth',
+    title: 'The Uncomfortable Truth About Your Black Belt: Why It\'s Okay to Say No',
+    date: 'July 2025',
+    excerpt: 'Maybe we should think twice about attendance-based belts or choreographed test promotions. What if it was okay to say "thanks, but I\'m not ready" to a black belt?'
+  },
+  {
     slug: 'hello-world',
     title: `Hello World! I'm Victor`,
     date: 'June 2025',

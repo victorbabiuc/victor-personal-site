@@ -1,6 +1,21 @@
 'use client'
 
+import { useState, useEffect } from 'react'
+
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkScreenSize()
+    window.addEventListener('resize', checkScreenSize)
+    
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
+
   return (
     <main style={{
       minHeight: '100vh',
@@ -15,22 +30,22 @@ export default function Home() {
           maxWidth: '900px',
           width: '100%',
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: isMobile ? 'column' : 'row',
           alignItems: 'center',
-          gap: '48px',
+          gap: isMobile ? '32px' : '48px',
           background: 'none',
         }}
       >
-        {/* Photo - Left Side */}
+        {/* Photo - Left Side on Desktop, Top on Mobile */}
         <div
           style={{
-            flex: '0 0 300px',
+            flex: isMobile ? 'none' : '0 0 300px',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            width: '300px',
-            minWidth: '180px',
-            maxWidth: '300px',
+            width: isMobile ? '200px' : '300px',
+            minWidth: isMobile ? '200px' : '180px',
+            maxWidth: isMobile ? '200px' : '300px',
           }}
         >
           <img
@@ -38,7 +53,7 @@ export default function Home() {
             alt="Victor Babiuc"
             style={{
               width: '100%',
-              maxWidth: '300px',
+              maxWidth: isMobile ? '200px' : '300px',
               height: 'auto',
               borderRadius: '50%',
               boxShadow: '0 4px 24px rgba(0,0,0,0.10)',
@@ -48,11 +63,11 @@ export default function Home() {
             }}
           />
         </div>
-        {/* Content - Right Side */}
+        {/* Content - Right Side on Desktop, Below Photo on Mobile */}
         <div
           style={{
-            flex: 1,
-            minWidth: 0,
+            flex: isMobile ? 'none' : 1,
+            minWidth: isMobile ? '100%' : 0,
             textAlign: 'center',
             display: 'flex',
             flexDirection: 'column',
@@ -62,7 +77,7 @@ export default function Home() {
         >
           {/* Hero Section */}
           <h1 style={{
-            fontSize: '64px',
+            fontSize: isMobile ? '48px' : '64px',
             fontWeight: '700',
             color: '#1a1a1a',
             marginBottom: '16px',
@@ -72,9 +87,9 @@ export default function Home() {
           </h1>
           
           <p style={{
-            fontSize: '20px',
+            fontSize: isMobile ? '18px' : '20px',
             color: '#666',
-            marginBottom: '48px',
+            marginBottom: isMobile ? '32px' : '48px',
             fontWeight: '300'
           }}>
             Wannabe Entrepreneur & Tech Enthusiast
@@ -82,10 +97,10 @@ export default function Home() {
 
           {/* About Section */}
           <p style={{
-            fontSize: '18px',
+            fontSize: isMobile ? '16px' : '18px',
             color: '#444',
             lineHeight: '1.8',
-            marginBottom: '48px',
+            marginBottom: isMobile ? '32px' : '48px',
             maxWidth: '650px',
             marginLeft: 'auto',
             marginRight: 'auto'
@@ -124,7 +139,7 @@ export default function Home() {
             justifyContent: 'center',
             alignItems: 'center',
             gap: '20px',
-            marginBottom: '80px'
+            marginBottom: isMobile ? '48px' : '80px'
           }}>
             {/* LinkedIn */}
             <a 

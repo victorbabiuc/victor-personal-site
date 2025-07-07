@@ -2,11 +2,91 @@ import Link from 'next/link';
 
 export async function generateStaticParams() {
   return [
+    { slug: 'bjj-black-belt-truth' },
     { slug: 'hello-world' }
   ];
 }
 
 const posts = {
+  'bjj-black-belt-truth': {
+    title: 'The Uncomfortable Truth About Your Black Belt: Why It\'s Okay to Say No',
+    date: 'July 2025',
+    content: [
+      '8 minute read',
+      'What This Is Really About (TLDR for the Impatient)',
+      '• Maybe we should think twice about attendance-based belts or choreographed test promotions',
+      '• Obsessing over your next belt (unless you compete professionally) might be holding you back',
+      '• Leaving a school just because you didn\'t get promoted? You\'re missing the point',
+      '• But staying at a school that promotes everyone with zero standards? That\'s a problem too',
+      '• What if it was okay to say "thanks, but I\'m not ready" to a black belt?',
+      '• Students who accept belts they know they didn\'t earn are part of the problem',
+      '• Your last belt should be different—maybe you should have a say in it',
+      'The Second Most Important Belt',
+      'So here\'s something I\'ve been thinking about lately. We all know the white belt is the most important one—it\'s the one that gets you started, right? But what about the black belt?',
+      'I\'ve been watching how we hand these things out, and honestly, it\'s getting weird. Should everyone get one? Does everyone even want one? Let me share some thoughts that might ruffle a few feathers.',
+      'Islam Makhachev dropped this gem a while back: "Who give him black belt...We HAVE to CHECK this…we have to cancel many black belt…they make jiujitsu look bad."',
+      'Now look, Makhachev loves stirring the pot for MMA drama. But between you and me? There\'s some truth hiding in that joke. Funny thing is, neither Makhachev nor I have a black belt, which maybe lets us see things differently. We\'re not defending our own territory here—just watching what\'s happening to the art.',
+      'The Celebrity Thing (And That 3.5-Year Black Belt)',
+      'Okay, so celebrities are everywhere on the mats now—Ashton Kutcher, Keanu Reeves, Demi Lovato, Joe Rogan, Ed O\'Neill, Tom Hardy, Guy Ritchie, Jason Statham, even Zuckerberg\'s out there competing. And hey, that\'s actually pretty cool for getting eyes on the sport!',
+      'But then I see stuff like this Instagram post—someone getting a black belt in 3.5 years. Come on now. Most of us are grinding for 10+ years, getting our egos crushed daily, learning the hard way. But I guess if you\'ve got the cash, they\'re for sale now?',
+      'Is it just me, or are we watching the movie all over again? Movies made certain martial arts popular back in the day, money rolled in, and boom—strip mall black belts for everyone.',
+      'The McDojos are coming, folks. Actually, they might already be here.',
+      'Even the Big Names Are Calling BS',
+      'Craig Jones flat out said it on More Plates More Dates: "It\'s a marketing trick."',
+      'And Danaher? Even more brutal on Lex Fridman: "No one cares if you got a black belt. Just show up, pay your fees. Don\'t set your goals low, okay? I know plenty of black belts that suck."',
+      'When one of the best coaches in the game is basically saying your black belt might be worthless... maybe we should listen?',
+      'So What\'s a Black Belt Supposed to Be?',
+      'Look, a black belt means different things to different people. But anyone who trains knows the difference when they roll with a real one versus someone who just... has one. It\'s more art than science, you know?',
+      'Sure, if you\'re winning at black belt competitions, case closed—you earned it. But what about the rest of us? The 90% who don\'t compete professionally, or compete but aren\'t exactly medaling?',
+      'Here\'s what I think it comes down to: What do your training partners expect when they see that belt?',
+      'It\'s not about memorizing every move on YouTube. It\'s not about perfect attendance. It\'s about what happens when you slap hands and bump fists. Can you flow? Do you understand pressure and timing? Can you keep people safe while still being effective?',
+      'Okay, Here\'s Where It Gets Awkward',
+      'We keep talking about gyms handing out belts like Halloween candy, but what about us? The students proudly tying on belts we know we didn\'t really earn?',
+      'I know, I know—nobody wants to hear this. But if you can\'t perform at that level and you\'re still rocking that belt, aren\'t you part of the problem too?',
+      'Think about it: You chose to buy that first white belt and start training. Shouldn\'t you have some say in whether you\'ve actually earned the last one?',
+      'Now, I\'ll admit—"growing into your belt" is real. I got promoted to purple on my last day at my first school. First time rolling at my new gym as a fresh purple? Man, I felt like I was drowning. Everyone expected a certain level I just didn\'t have yet. Took me months to stop feeling like I was playing catch-up. Years later, going back as a brown belt? Totally different story. Felt great rolling with old training partners. But I won\'t lie—I had serious anxiety that whole time I was there as a purple belt.',
+      'The thing is, the black belt should be different. That\'s the one where we maybe need to be honest with ourselves.',
+      'The Good Rolls Test',
+      'Ever notice what happens when someone legit visits your gym? We all scramble to introduce them to our best people, make sure they get good rolls. Iron sharpens iron, right?',
+      'But flip it—when someone\'s wearing a belt they can\'t back up, what happens? They death grip, they stall, they spaz out, or (my personal favorite) they try to coach you mid-roll to protect their ego.',
+      'We all know that person who smashes the new people and the smaller folks but suddenly has a bad back when it\'s time to roll with someone their own size and rank.',
+      'Like Renzo said: "My opponent is my teacher, my ego is my enemy."',
+      'Some Red Flags to Watch For',
+      'Just some things I\'ve noticed:',
+      '• "You\'ve been here X months, time for your blue belt!" (Really? That\'s it?)',
+      '• Everyone gets promoted (What are the odds everyone progressed equally?)',
+      '• Nobody ever hears "not yet" (Come on, that can\'t be right)',
+      '• "But I\'m wasting money if I don\'t get promoted!"',
+      'Hang on—why are you training? If you\'re counting dollars per belt, there are other martial arts where you can get a black belt in a few years. BJJ takes a decade for a reason (or at least it used to, unless you\'re a phenom like BJ Penn).',
+      'Here\'s the thing: Get promoted too early and you\'ll hate training. Every roll becomes about surviving instead of learning. Every drop-in at another gym becomes an ego-crushing nightmare. Is that worth it?',
+      'Let\'s Not Forget the Sandbaggers',
+      'To be fair, it\'s not just about promoting too fast. Some coaches hold people back to win medals. You dominated Worlds at blue belt? Maybe, just maybe, it\'s time for purple? But nah, some coaches keep their killers at lower belts for the medal count.',
+      'That\'s not protecting the art either. That\'s just gaming the system.',
+      'The Conversations Nobody\'s Having',
+      'For Coaches: What do you do with students who just... don\'t get it? The ones who can memorize techniques but can\'t feel the game? I get it—nobody wants to say "you\'ll probably never be a black belt." But maybe that conversation needs to happen sometimes?',
+      'For Students: Your professor can offer you any belt, but remember—you bought that first white belt, and maybe you should have some say in the last one too.',
+      'What if you said: "Coach, I appreciate it, but I\'m not ready. I don\'t want to teach or compete. I just love training. Can I stay at brown a bit longer?"',
+      'Or even: "You know what? I\'m good without a black belt. I\'m here because it\'s fun!"',
+      'Why would that be weird? Put your ego aside—if you\'re having fun and learning, who cares how long it takes? Even if your coach straight up says you might never get a black belt... so what? You\'re still training, still improving, still part of this thing we love.',
+      'So What Now?',
+      'Yeah, I know. Here I am writing a whole thing about colored belts like some wannabe bjj philosopher but Danaher said it best: "Build skills, focus on that." The belt should represent the skills, not replace them.',
+      'Maybe start some conversations? With your coach, your training partners, but mostly with yourself. Look in the mirror and ask: "Did I really earn this?"',
+      'Because if we keep taking belts we didn\'t earn, eventually the market\'s going to decide what they mean. And we\'ve all seen that movie before—it doesn\'t end well for the art.',
+      'Sometimes the best thing you can do is say "Thanks, but not yet." Sometimes it\'s knowing where you honestly belong on this journey.',
+      'What You Can Actually Do About It',
+      'If You\'re a Student:',
+      '• Ask for real feedback: "What specifically do I need to work on?"',
+      '• Pick one weakness each month to focus on (instead of belt-watching)',
+      '• If you genuinely don\'t feel ready for a promotion, say so',
+      'If You\'re a Coach:',
+      '• Maybe post what you\'re actually looking for in each belt level?',
+      '• Have regular check-ins with students',
+      '• Make "not yet" a normal part of the conversation, not a crushing blow',
+      '• Be real with people about where they stand',
+      'So what do you think? Am I overthinking this whole belt thing? Should students have more say in their promotions? Are we letting the business side ruin what makes BJJ special?',
+      'Let\'s talk about it.'
+    ]
+  },
   'hello-world': {
     title: `Hello World! I'm Victor`,
     date: `June 2025`,
@@ -70,9 +150,9 @@ export default function BlogPost({ params }) {
 
   const shareLinks = {
     twitter: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
-    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+    linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedUrl}&title=${encodedTitle}`,
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
-    email: `mailto:?subject=${encodeURIComponent('Check out this post')}&body=${encodeURIComponent(`Check out this post: ${post.title}\n\n${postUrl}`)}`
+    email: `mailto:?subject=${encodeURIComponent('Check out this post: ' + post.title)}&body=${encodeURIComponent('I thought you might find this interesting:\n\n' + post.title + '\n\n' + postUrl)}`
   };
 
   return (
@@ -135,15 +215,45 @@ export default function BlogPost({ params }) {
           fontWeight: 400,
         }}>{post.date}</div>
         {/* Content */}
-        {post.content.map((para, idx) => (
-          <p key={idx} style={{
-            fontSize: '19px',
-            color: '#444',
-            lineHeight: 1.8,
-            marginBottom: '22px',
-            fontWeight: 300,
-          }}>{para}</p>
-        ))}
+        {post.content.map((content, idx) => {
+          // Check if content looks like a header (no period, shorter text)
+          const isHeader = content.length < 100 && !content.includes('.') && !content.startsWith('•');
+          const isBulletPoint = content.startsWith('•');
+          
+          if (isHeader) {
+            return (
+              <h2 key={idx} style={{
+                fontSize: '28px',
+                fontWeight: 600,
+                color: '#1a1a1a',
+                marginTop: '32px',
+                marginBottom: '16px',
+                lineHeight: 1.3,
+              }}>{content}</h2>
+            );
+          } else if (isBulletPoint) {
+            return (
+              <div key={idx} style={{
+                fontSize: '19px',
+                color: '#444',
+                lineHeight: 1.6,
+                marginBottom: '8px',
+                fontWeight: 300,
+                paddingLeft: '20px',
+              }}>{content}</div>
+            );
+          } else {
+            return (
+              <p key={idx} style={{
+                fontSize: '19px',
+                color: '#444',
+                lineHeight: 1.6,
+                marginBottom: '16px',
+                fontWeight: 300,
+              }}>{content}</p>
+            );
+          }
+        })}
         
         {/* Social Media Sharing Section */}
         <div style={{
