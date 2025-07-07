@@ -97,7 +97,7 @@ const posts = {
       `I hope to periodically contribute to this blog and describe what passion projects I'm working on.`,
       `Aside from 'vibe coding' I'm also interested in plants, with my prized possession being a variegated [albo monstera](https://en.wikipedia.org/wiki/Monstera_deliciosa), but recently I've been getting into succulents and cacti.`,
       `In addition, I'm practicing [JiuJitsu](https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu), continually trying to teach my dog Ruby new tricks, and soaking up as much Florida sunshine as possible.`,
-      `I'm always on the lookout for new travel destinations. Fun fact: I've circled the globe once. If you have any recommendations of places that have a rich history and incredible food - [drop me a line](mailto:victor@victorbabiuc.com).`,
+      `I'm always on the lookout for new travel destinations. Fun fact: I've circled the globe once. If you have any recommendations of places that have a rich history and incredible food - [drop me a line](mailto:glootieapp@gmail.com).`,
       `Staying curious! Always learning, always building, always exploring.`,
       `#vibecodig #jiujitsu #recruiting #dogtraining #plants #travel #angelinvesting`
     ]
