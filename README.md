@@ -1,60 +1,108 @@
-# Victor Babiuc - Personal Website
+# Victor's Personal Site
 
-A personal website for Victor Babiuc — wannabe entrepreneur & tech enthusiast. The site is now **LIVE** with real content!
+## Overview
+Personal website and blog built with Next.js, featuring AI-assisted development using Claude and Cursor.
 
 🌐 **Live Website:** [https://victorbabiuc.com](https://victorbabiuc.com)
 
----
+## Tech Stack
+- Next.js 15.3.4
+- React
+- CSS Modules
+- Markdown-based blog system
+- Deployed on Hostgator
 
-## 🚦 Status
-- Site is **LIVE** at [https://victorbabiuc.com](https://victorbabiuc.com)
-- Blog routing issue is solved for both local development and static hosting
-- Both development and production builds tested and working
-- **Latest:** Custom image-based blog header with scattered text layout and subtitle, modern X (Twitter) sharing button, and underlined external link for Ruby on the homepage
-
----
-
-## ✨ Features
-- Responsive, clean design
-- Custom image-based blog header with scattered, artistic text layout
-- Subtitle: "Thoughts on tech, recruiting, travel, and adventures" (centered, single line)
-- Social media links with custom SVG icons
-- Modern X (Twitter) sharing button with official branding
-- Underlined external link for "Ruby" (homepage)
-- Fast loading, minimal dependencies
-- Static export for easy deployment
-
----
-
-## 🛠️ Tech Stack
-- **Framework:** Next.js 15
-- **Styling:** No CSS frameworks, custom CSS only
-- **Icons:** Custom SVGs
-- **Hosting:** Hostgator (static export)
-
----
-
-## 🚀 Getting Started
-
-Clone the repository:
+## Setup
 ```bash
+# Clone the repository
 git clone https://github.com/victorbabiuc/victor-personal-site.git
 cd victor-personal-site
-```
 
-Install dependencies:
-```bash
+# Install dependencies
 npm install
-```
 
-Run the development server:
-```bash
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Export static files for deployment
+npm run export
 ```
 
----
+## Blog System
 
-## 🏗️ Build & Deploy
+This site uses a markdown-based blog system. Blog posts are automatically loaded from markdown files in the `public/blog-posts/` directory.
+
+### How to Add a New Blog Post (Step-by-Step)
+
+1. **Create a new markdown file**
+   - Navigate to `public/blog-posts/`
+   - Create a new file with the format: `your-post-slug.md`
+   - Example: `my-awesome-post.md` will create a blog at `/blog/my-awesome-post`
+
+2. **Add frontmatter** (required metadata at the top)
+   ```markdown
+   ---
+   title: "Your Blog Post Title"
+   date: "2025-01-15"
+   excerpt: "A brief 1-2 sentence description that appears in the blog list"
+   ---
+   ```
+
+3. **Write your content** using markdown
+   ```markdown
+   # Main Heading
+
+   Your introduction paragraph goes here.
+
+   ## Subheading
+
+   More content with **bold text** and *italic text*.
+
+   - Bullet point 1
+   - Bullet point 2
+
+   [Link text](https://example.com)
+
+   > A blockquote for emphasis
+
+   ---
+
+   End with a call to action or summary.
+   ```
+
+4. **Save the file** and your post will automatically appear in the blog list
+
+### Markdown Features Supported
+
+- **Headers**: `# H1`, `## H2`, `### H3`, etc.
+- **Bold**: `**bold text**`
+- **Italic**: `*italic text*`
+- **Links**: `[text](url)`
+- **Lists**: `- item` or `1. item`
+- **Blockquotes**: `> quote`
+- **Code blocks**: ` ```code``` `
+- **Horizontal rules**: `---`
+- **Line breaks**: Two spaces at end of line or blank line between paragraphs
+
+### Blog Post Best Practices
+
+- Use descriptive slugs (filenames): `jiu-jitsu-belt-philosophy.md` instead of `post1.md`
+- Keep excerpts under 160 characters for better display
+- Use YYYY-MM-DD format for dates
+- Add a reading time estimate at the start: `*8 minute read*`
+- Include a call-to-action at the end
+- Break up long posts with subheadings
+- Use lists and formatting to improve readability
+
+### Current Blog Posts
+
+- `bjj-black-belt-truth.md` - Jiu Jitsu Belts: Who Are They Really For?
+- `hello-world.md` - Hello World! I'm Victor
+
+## Build & Deploy
 
 ### Build Instructions
 ```bash
@@ -91,9 +139,12 @@ npm run fix-blog-routes
 - `npm run fix-blog-routes` - Manually fix blog routing
 - `./fix-static-routes.sh` - Robust script that handles all blog posts automatically
 
----
+## Deployment
 
-## 🚢 Deployment (Static Hosting & Hostgator)
+The site is deployed on Hostgator. To deploy:
+
+1. Build the static export: `npm run build && npm run export`
+2. Upload the contents of the `out/` directory to your Hostgator public_html folder
 
 ### Deployment Steps
 1. **Build the site** (includes automatic routing fix):
@@ -113,76 +164,59 @@ npm run fix-blog-routes
    - Extract into your `public_html` (or desired) directory
    - Ensure your domain points to the correct directory
 
-### Blog Routing Solution
-- **Local development:** Use `/blog` (Next.js routing works out of the box)
-- **Static hosting:** `/blog` automatically resolves to `blog/index.html`
-- **Automated fix:** The `postbuild` script handles all routing issues automatically
+## Roadmap
 
----
+### Completed ✅
+- [x] Basic website structure
+- [x] Markdown-based blog system
+- [x] Two initial blog posts
+- [x] Responsive design
+- [x] Custom styling
+- [x] Social icons with interactive effects
+- [x] Deployment to production
+- [x] Blog live with "Hello World" post
+- [x] Custom image-based blog header with scattered text layout
+- [x] Modern X (Twitter) sharing button
+- [x] Static routing solution for blog posts
 
-## 📝 Blog
+### In Progress 🚧
+- [ ] SEO optimization
+- [ ] Social media meta tags
+- [ ] Photo carousel for homepage
+- [ ] Blog post featured images
+- [ ] Contact form
 
-The site includes a blog section with individual posts at `/blog/`. The blog features a custom image header with scattered text and a modern, SEO-friendly layout.
+### Planned Features 📋
+- [ ] Tag/category system for blog posts
+- [ ] Blog post search functionality
+- [ ] Email newsletter signup
+- [ ] Comments system
+- [ ] Dark mode toggle
+- [ ] Portfolio/projects section
+- [ ] About page expansion
+- [ ] RSS feed for blog
+- [ ] Reading progress indicator
+- [ ] Related posts suggestions
+- [ ] Analytics integration (Google Analytics)
+- [ ] Social sharing buttons for blog posts
+- [ ] Reading time estimates
+- [ ] Investment portfolio showcase page
+- [ ] Travel photo galleries
+- [ ] Guestbook or comments section
+- [ ] Interactive resume/CV
+- [ ] Custom 404 page
+- [ ] Fun easter eggs
+- [ ] Multi-language support
+- [ ] Microblog or notes section
 
-### Current Posts
-- [Hello World! I'm Victor](https://victorbabiuc.com/blog/hello-world) - Introduction and background
-- [The Uncomfortable Truth About Your Black Belt](https://victorbabiuc.com/blog/bjj-black-belt-truth) - BJJ thoughts and insights
+## Contributing
 
-### Adding New Blog Posts
-1. **Add post metadata** to `app/blog/page.js` in the posts array:
-   ```javascript
-   {
-     slug: 'your-post-slug',
-     title: 'Your Post Title',
-     date: 'Month Year',
-     excerpt: 'Brief description of the post...'
-   }
-   ```
+This is a personal project, but suggestions and feedback are welcome!
 
-2. **Add post content** to `app/blog/[slug]/page.js` in the posts object:
-   ```javascript
-   'your-post-slug': {
-     title: 'Your Post Title',
-     date: 'Month Year',
-     content: [
-       'First paragraph...',
-       'Second paragraph...',
-       'Header text (auto-detected as h2)',
-       '• Bullet point (auto-detected)',
-       'More content...'
-     ]
-   }
-   ```
-
-3. **Add to generateStaticParams** in `app/blog/[slug]/page.js`:
-   ```javascript
-   export async function generateStaticParams() {
-     return [
-       { slug: 'your-post-slug' },
-       // ... existing slugs
-     ];
-   }
-   ```
-
-4. **Rebuild the site** (see build instructions below)
-
-### Blog Content Formatting
-- **Headers**: Auto-detected by length < 100 chars, no periods, not bullet points
-- **Bullet points**: Use `•` prefix for automatic list formatting
-- **Paragraphs**: Regular text with automatic spacing
-- **Spacing**: Consistent 16px margins, 1.6 line height for readability
-
----
-
-## 📋 Roadmap
-See [`ROADMAP.md`](./ROADMAP.md) for planned features, priorities, and ideas.
-
----
-
-## 👤 About Me
-Hi, I'm Victor. I run [Bold Profiles](https://boldprofiles.com/) (helping startups find tomorrow's leaders), invest small checks as an angel in tech companies, and have a wide range of interests — from jiujitsu to plant care. Always staying curious!
-
----
-
-© 2024 Victor Babiuc. All rights reserved.
+## Notes
+- Maintain a clean, minimal, and accessible design
+- Prioritize fast load times and performance
+- Use semantic HTML and best practices
+- Keep dependencies up to date
+- Test on mobile and desktop
 

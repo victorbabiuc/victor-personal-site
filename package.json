@@ -12,8 +12,10 @@
     "fix-blog-routes": "cp out/blog.html out/blog/index.html && mkdir -p out/blog/bjj-black-belt-truth out/blog/hello-world && cp out/blog/bjj-black-belt-truth.html out/blog/bjj-black-belt-truth/index.html && cp out/blog/hello-world.html out/blog/hello-world/index.html"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "react-markdown": "^10.1.0"
   }
 }
